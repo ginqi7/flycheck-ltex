@@ -1,0 +1,1 @@
+This project is an extension for flycheck, it can help you to check your language grammar.
