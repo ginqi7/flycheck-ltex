@@ -5,6 +5,7 @@
 "
   :command ("ltex-cli"  source)
   :error-parser ltex-error-parser
+  :modes org-mode
   )
 
 
