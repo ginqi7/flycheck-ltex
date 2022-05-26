@@ -1,1 +1,31 @@
 This project is an extension for flycheck, it can help you to check your language grammar.
+
+If you are learning a new language, this tool will check your sentences to help you improve your writing ability.
+
+* Prerequisites
+
+- *flycheck* : It is a grammar check frame for Emacs. My tool is an extension for it. You can get its source code in [[https://github.com/flycheck/flycheck][there]]
+- *ltex-ls* : Is an offline grammar check engine. It provides both LSP server and CLI tool. My tool using it as core checker. You can get its source code in [[https://github.com/valentjn/ltex-ls][there]]
+  
+
+* Installing
+clone the project in your own Emacs configuration files directory, like:
+
+#+begin_src shell
+  git clone git@github.com:ginqi7/leetcode-emacs.git ~/.emacs.d/lisp/flycheck-ltex
+#+end_src
+
+add the path to ‘load-path’
+
+#+begin_src emacs-lisp
+  (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp/flycheck-ltex"))
+#+end_src
+
+* Configuration
+In your initiate file add:
+#+begin_src emacs-lisp
+  (require 'flycheck-ltex)
+#+end_src
+
+* Example
+[[file:example/english-example.png]]
